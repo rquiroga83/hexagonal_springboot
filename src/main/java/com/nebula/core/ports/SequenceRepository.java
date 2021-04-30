@@ -1,4 +1,4 @@
-package com.nebula.base.domain.repositories;
+package com.nebula.core.ports;
 
 public interface SequenceRepository {
   public Integer getSequence();

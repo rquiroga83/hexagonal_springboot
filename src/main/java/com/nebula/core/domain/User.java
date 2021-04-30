@@ -1,4 +1,4 @@
-package com.nebula.base.domain.entities;
+package com.nebula.core.domain;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.nebula.base.application;
+package com.nebula.adapters.controllers;
 
 public class CreateUserResponse {
   public final Integer id;

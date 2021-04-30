@@ -1,4 +1,4 @@
-package com.nebula.base.infraestructure.repositories;
+package com.nebula.adapters.repositories;
 
 import java.util.concurrent.Semaphore;
 

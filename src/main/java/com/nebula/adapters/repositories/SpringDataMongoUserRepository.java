@@ -1,6 +1,7 @@
-package com.nebula.base.infraestructure.repositories;
+package com.nebula.adapters.repositories;
 
-import com.nebula.base.domain.entities.User;
+import com.nebula.core.domain.User;
+
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 

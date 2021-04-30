@@ -1,6 +1,6 @@
-package com.nebula.base.application;
+package com.nebula.adapters.controllers;
 
-import com.nebula.base.domain.entities.User;
+import com.nebula.core.domain.User;
 
 public class UserResponse {
   User user;

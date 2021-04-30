@@ -1,5 +1,6 @@
-package com.nebula.base.infraestructure.repositories;
-import com.nebula.base.domain.repositories.SequenceRepository;
+package com.nebula.adapters.repositories;
+
+import com.nebula.core.ports.SequenceRepository;
 
 import org.springframework.stereotype.Component;
 

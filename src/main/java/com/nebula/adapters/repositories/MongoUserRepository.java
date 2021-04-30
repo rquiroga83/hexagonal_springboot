@@ -1,9 +1,9 @@
-package com.nebula.base.infraestructure.repositories;
+package com.nebula.adapters.repositories;
 
 import java.util.Optional;
 
-import com.nebula.base.domain.entities.User;
-import com.nebula.base.domain.repositories.UserRepository;
+import com.nebula.core.domain.User;
+import com.nebula.core.ports.UserRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Primary;
@@ -15,7 +15,6 @@ public class MongoUserRepository implements UserRepository {
 
   private SpringDataMongoUserRepository springDataMongoUserRepository;
 
-
   @Autowired
   public MongoUserRepository(SpringDataMongoUserRepository springDataMongoUserRepository){
     this.springDataMongoUserRepository = springDataMongoUserRepository;
@@ -26,7 +25,7 @@ public class MongoUserRepository implements UserRepository {
 
     Optional<User> user = springDataMongoUserRepository.findById(id);
 
-    return user.get();
+    return user.isPresent() ? user.get() : null;
   }
 
   @Override

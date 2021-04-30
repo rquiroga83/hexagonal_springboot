@@ -1,7 +1,7 @@
-package com.nebula.base.application;
+package com.nebula.adapters.controllers;
 
-import com.nebula.base.domain.entities.User;
-import com.nebula.base.domain.services.UserService;
+import com.nebula.core.domain.User;
+import com.nebula.core.services.UserService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -23,19 +23,16 @@ public class UserController {
   }
   
   @GetMapping("/{userId}")
-  UserResponse getUser(@PathVariable("userId") Integer userId) {
+  public UserResponse getUser(@PathVariable("userId") Integer userId) {
     // @RequestParam String id => Query Param
-
     User user = userService.getUserById(userId);
     return new UserResponse(user);
   }
 
 
   @PostMapping
-  CreateUserResponse createUser(@RequestBody UserRequest userRequest) {
-
+  public CreateUserResponse createUser(@RequestBody UserRequest userRequest) {
     int id = userService.createUser(userRequest.getUser());
-
     return new CreateUserResponse(id);
   }
 

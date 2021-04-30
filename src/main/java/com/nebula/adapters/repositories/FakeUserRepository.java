@@ -1,9 +1,10 @@
-package com.nebula.base.infraestructure.repositories;
+package com.nebula.adapters.repositories;
 
 import java.util.ArrayList;
 
-import com.nebula.base.domain.entities.User;
-import com.nebula.base.domain.repositories.UserRepository;
+import com.nebula.core.domain.User;
+import com.nebula.core.ports.UserRepository;
+
 import org.springframework.stereotype.Component;
 
 @Component

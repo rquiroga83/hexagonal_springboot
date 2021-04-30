@@ -1,6 +1,7 @@
-package com.nebula.base.infraestructure.configuration;
+package com.nebula.configuration;
 
-import com.nebula.base.infraestructure.repositories.SpringDataMongoUserRepository;
+import com.nebula.adapters.repositories.SpringDataMongoUserRepository;
+
 import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 
 @EnableMongoRepositories(basePackageClasses = SpringDataMongoUserRepository.class)
